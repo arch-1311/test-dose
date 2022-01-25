@@ -1,34 +1,65 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>
-			Booster dose calculator
-		</title>
-<link rel="stylesheet" href="jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+		<title>Booster dose calculator</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+		<style>
+				body, html {
+				  height: 100%;
+				  margin: 0;
+				}
+
+				.bg {
+				  /* The image used */
+				  background-image: url("b.jpg");
+
+				  /* Full height */
+				  height: 100%; 
+
+				  /* Center and scale the image nicely */
+				  background-position: center;
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				}
+		</style>
 	</head>
 	
 	<body style = "text-align:center;">
-		
-		<h1 style = "color:green;" >
-			<u>Booster Dose Calculator</u>
-		</h1>
-<h3 style = "color:blue;"> As per MoHFW regulation you must atleast have 9 months gap before taking your booster dose. </h3>
-		
-		<p style ="font-size: 19px;"> Enter your 2nd vaccine dose date <input type="date" id = "txtDate" style =
-			"font-size: 19px; font-weight: bold;"/> 
-		</p>
-		
-		<button onClick = "getdate()">
-			click here
-		</button>
-		
-		<p id = "demo" style =
-			"color: green; font-size: 24px; font-weight: bold;">
-		</p>
-		
+		<!-- <div style = "position: relative;  text-align: center;"> -->
+			<!-- <img alt="" src='Vacc.png' style="width:100%;"> -->
+			<div class ="bg"></div>
+			<!-- <div style ="position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);"> -->
+			<div style ="position: absolute;
+						top: 50%;  left: 50%;  transform: translate(-50%, -50%);
+						background-color: turquoise;
+						opacity: 90%;
+						color: #e4111ae8;">
+				<h1 style = "color: initial; font-size: 55px; font-family: inherit;" >
+					<u>Booster Dose Calculator</u>
+				</h1>
+				<h3 style = "color: initial;font-family: initial;font-size: 25px;"> 
+					As per MoHFW regulation you must atleast have 9 months gap before taking your booster dose. 
+				</h3>
+				
+				<p style ="font-size: 19px;font-family: initial;color: initial;font-weight: bold;"> Enter your 2nd vaccine dose date <input type="date" id = "txtDate"/> 
+				</p>
+				
+				<!-- <button type="button" class="btn btn-outline-primary">Primary</button>  -->
+				<button type="button" class="btn btn-secondary" onClick = "getdate()">
+					CLICK HERE
+				</button>
+				
+				<p id = "demo" style =
+					"color: red; font-size: 24px;">
+				</p>
+			</div>
+		</div>
 		<script>
 		/*$(document).ready(function () {
     $('#txtDate').datepicker();
