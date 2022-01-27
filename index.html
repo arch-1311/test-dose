@@ -10,8 +10,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-</head>
 
+	<style>
+		#txtDate {
+		  /* fallback for old browsers */
+		  background: #89f7fe;
+
+		  /* Chrome 10-25, Safari 5.1-6 */
+		  background: -webkit-linear-gradient(to right, rgba(137, 247, 254, 0.5), rgba(102, 166, 255, 0.5));
+
+		  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		  background: linear-gradient(to right, rgba(137, 247, 254, 0.5), rgba(102, 166, 255, 0.5))
+		}
+	</style>
+</head>
 <body>
 	<div class="px-4 py-4 my-4 text-center"> <img src='3rd-dose.png' alt="Booster Dose Banner" style="width: 90%; height: auto; padding: 2rem;" />
 		<div class="container">
@@ -20,7 +32,7 @@
 			<hr/>
 			<div>
 				<h4 class="dose"> Enter your 2nd dose date &nbsp; </h4>
-				<h4> <input type="date" style="padding: 1rem 1rem 1rem 1rem;" id = "txtDate" min="2021-01-01"/> <i style="font-size:24px" class="fa">&#xf073;</i></h4> </div>
+				<h4> <input type="date" style="padding: 1rem 1rem 1rem 1rem;" id = "txtDate" min="2021-01-01"/></h4> </div>
 			<div>
 				<!-- class = "btn btn-info"-->
 				<button id ='click' type="button" class="btn btn-secondary button" onClick="getdate()"> CLICK HERE </button>
