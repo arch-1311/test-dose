@@ -10,7 +10,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-
 	<style>
 		#txtDate {
 		  background-color: #fafafa;
@@ -21,8 +20,30 @@
 		#txtDate:hover {
 		  box-shadow:0 0 4px rgba(0,0,0,0.5);
 		}
+		#click {
+		  padding: 10px 12px;
+		  font-size: 15px;
+		  text-align: center;
+		  cursor: pointer;
+		  outline: none;
+		  color: #fff;
+		  background-color: #005cb9;
+		  border: none;
+		  border-radius: 8px;
+		  box-shadow: 0 5px #999;
+		}
+
+		#click:hover {background-color: #3290b3}
+
+		#click:active {
+		  background-color: #3290b3;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+		
 	</style>
 </head>
+
 <body>
 	<div class="px-4 py-4 my-4 text-center"> <img src='3rd-dose.png' alt="Booster Dose Banner" style="width: 90%; height: auto; padding: 2rem;" />
 		<div class="container">
@@ -31,10 +52,9 @@
 			<hr/>
 			<div>
 				<h4 class="dose"> Enter your 2nd dose date &nbsp; </h4>
-				<h4> <input type="date" style="padding: 1rem 1rem 1rem 1rem; border-radius:10px;" id = "txtDate" min="2021-01-01"/></h4> </div>
+				<h4> <input type="date" style="padding: 1rem 1rem 1rem 1rem;" id = "txtDate" min="2021-01-01"/> </h4> </div>
 			<div>
-				<!-- class = "btn btn-info"-->
-				<button id ='click' type="button" class="btn btn-secondary button" onClick="getdate()"> CLICK HERE </button>
+				<button id ='click' type="button" onClick="getdate()"> CLICK HERE </button><!-- class="btn btn-secondary button" --> 
 			</div>
 			<div class="px-3 py-2 my-2 text-center">
 				<h4 class="display-8 fw-bold" style="color:#005cb9; font-weight: bold;" id="demo"></h4>
