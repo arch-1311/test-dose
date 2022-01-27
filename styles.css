@@ -1,0 +1,63 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+.bg {
+	/* The image used */
+	/* background-image: url("b.jpg");
+	 Full height */
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: white;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 74, 173, 0.118);
+	border-radius: 15px;
+	opacity: 90%;
+	color: #e4111ae8;
+		max-width: 500px;
+	  margin: auto;
+	  padding: 155px 60px 180px 75px;
+}
+h1 {
+	color: rgb(0, 74, 173); 
+	/* font-size: 55px ; */
+	font-family: Arial, Helvetica, sans-serif;
+}
+				
+h4 {
+	color: rgb(0, 74, 173);
+	font-family: Arial, Helvetica, sans-serif;
+	/* font-size: 25px; */
+}
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+.dose {
+	font-family: Arial, Helvetica, sans-serif
+	color: rgb(0, 74, 173);
+	font-weight: bold;
+	padding : 1rem 1rem 1rem 1rem;
+}
+.button {
+	background-color: rgb(0, 74, 173);
+    border-color: rgb(0, 74, 173);
+    color: white; 
+	border-radius: 20px;
+}
+.demo {
+	color: red; 
+	font-family: Arial, Helvetica, sans-serif;
+}
