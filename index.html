@@ -13,14 +13,13 @@
 
 	<style>
 		#txtDate {
-		  /* fallback for old browsers */
-		  background: #89f7fe;
-
-		  /* Chrome 10-25, Safari 5.1-6 */
-		  background: -webkit-linear-gradient(to right, rgba(137, 247, 254, 0.5), rgba(102, 166, 255, 0.5));
-
-		  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-		  background: linear-gradient(to right, rgba(137, 247, 254, 0.5), rgba(102, 166, 255, 0.5))
+		  background-color: #fafafa;
+		  border:0;
+		  box-shadow:0 0 4px rgba(0,0,0,0.3);
+		  transition: .3s box-shadow;
+		}
+		#txtDate:hover {
+		  box-shadow:0 0 4px rgba(0,0,0,0.5);
 		}
 	</style>
 </head>
@@ -32,7 +31,7 @@
 			<hr/>
 			<div>
 				<h4 class="dose"> Enter your 2nd dose date &nbsp; </h4>
-				<h4> <input type="date" style="padding: 1rem 1rem 1rem 1rem;" id = "txtDate" min="2021-01-01"/></h4> </div>
+				<h4> <input type="date" style="padding: 1rem 1rem 1rem 1rem; border-radius:10px;" id = "txtDate" min="2021-01-01"/></h4> </div>
 			<div>
 				<!-- class = "btn btn-info"-->
 				<button id ='click' type="button" class="btn btn-secondary button" onClick="getdate()"> CLICK HERE </button>
